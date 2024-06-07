@@ -73,7 +73,7 @@ const Register = () => {
       await createUserWithEmailAndPassword(data.email, data.password);
       await updateProfile({ displayName: data.name, photoURL: url });
 
-      axios.put('https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/alluserinfo', userInfo).then((res) => {
+      axios.put('https://doctors-portal-server-one-psi.vercel.app/alluserinfo', userInfo).then((res) => {
         console.log(res.data);
       });
     }
@@ -107,7 +107,7 @@ const Register = () => {
       email: gUser.user.email,
       photoURL: gUser.user.photoURL,
     };
-    axios.put('https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/alluserinfo', gUserinfo).then((res) => {
+    axios.put('https://doctors-portal-server-one-psi.vercel.app/alluserinfo', gUserinfo).then((res) => {
       console.log(res.data);
     });
   }

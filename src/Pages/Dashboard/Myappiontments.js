@@ -31,7 +31,7 @@ const Myappiontments = () => {
     "appiontments",
     async () => {
       const response = await fetch(
-        `https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/booking?email=${user?.email}`,
+        `https://doctors-portal-server-one-psi.vercel.app/booking?email=${user?.email}`,
         {
           method: "GET",
           headers: {
@@ -79,7 +79,7 @@ const Myappiontments = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/AppiontmentDelete/${email}`)
+          .delete(`https://doctors-portal-server-one-psi.vercel.app/AppiontmentDelete/${email}`)
           .then((response) => {
             if (response.data.deletedCount > 0) {
               refetch();

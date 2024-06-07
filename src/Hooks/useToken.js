@@ -13,7 +13,7 @@ const useToken = (User) => {
 
     if (email) {
       axios
-        .put(`https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/user/${email}`,currentuser)
+        .put(`https://doctors-portal-server-one-psi.vercel.app/user/${email}`,currentuser)
         .then(function (response) {
           // handle success
           console.log(response.data);

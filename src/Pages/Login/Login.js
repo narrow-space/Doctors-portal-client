@@ -90,7 +90,7 @@ const Login = () => {
      }
      
  
-      axios.put('https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/alluserinfo',gUserinfo).then((res)=>{
+      axios.put('https://doctors-portal-server-one-psi.vercel.app/alluserinfo',gUserinfo).then((res)=>{
       const data=res.data;
       console.log(data);
     })

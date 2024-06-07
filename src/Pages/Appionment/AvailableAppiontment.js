@@ -17,7 +17,7 @@ const AvailableAppiontment = ({ footer, date, setDate }) => {
     isLoading,
     error,
     refetch,
-  } = useQuery(["availabe", formatedDate], () => fetch(`https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/available?date=${formatedDate}`).then(res =>
+  } = useQuery(["availabe", formatedDate], () => fetch(`https://doctors-portal-server-one-psi.vercel.app/available?date=${formatedDate}`).then(res =>
     res.json()
   )
   )

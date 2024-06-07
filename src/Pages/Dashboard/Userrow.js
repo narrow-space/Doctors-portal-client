@@ -28,7 +28,7 @@ const Userrow = ({ user, index,refetch }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         const accesstoken = localStorage.getItem("accesstoken");
-        fetch(`https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/user/admin/${email}`,{
+        fetch(`https://doctors-portal-server-one-psi.vercel.app/user/admin/${email}`,{
           method:'PUT',
           headers:{
             Authorization:`Bearer ${accesstoken}`,
@@ -94,7 +94,7 @@ const removeUser=()=>{
     reverseButtons: true
   }).then((result) => {
     if (result.isConfirmed) {
-      fetch(`https://doctors-portal-server-hiuzvttvk-narrow-spaces-projects.vercel.app/user/admin/${email}`,{
+      fetch(`https://doctors-portal-server-one-psi.vercel.app/user/admin/${email}`,{
         method:'DELETE',
         headers:{
           Authorization:`Bearer ${accesstoken}`,
