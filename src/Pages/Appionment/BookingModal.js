@@ -30,7 +30,7 @@ const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
 
     // console.log(_id,name,slot,patientname,patienEmail,patientNumber);
 
-    axios.post("https://doctors-portal-server-one-psi.vercel.app/booking", bookingInfo).then(
+    axios.post("https://doctors-portal-server-chi-ten.vercel.app/booking", bookingInfo).then(
       (res) => {
         const data = res.data;
         console.log(data);

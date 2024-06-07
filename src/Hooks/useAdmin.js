@@ -10,7 +10,7 @@ const useAdmin=(user)=>{
     
     const email=user?.email;
     const accesstoken = localStorage.getItem("accesstoken");
-  const url = `https://doctors-portal-server-one-psi.vercel.app/admin/${email}`;
+  const url = `https://doctors-portal-server-chi-ten.vercel.app/admin/${email}`;
   const config = {
     headers: {
       Authorization: `Bearer ${accesstoken}`,

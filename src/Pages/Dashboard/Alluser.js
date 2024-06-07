@@ -20,7 +20,7 @@ const Alluser = () => {
   const { data, isLoading, refetch } = useQuery(
     "users",
     async () =>
-      await fetch("https://doctors-portal-server-one-psi.vercel.app/alluser", {
+      await fetch("https://doctors-portal-server-chi-ten.vercel.app/alluser", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${accesstoken}`,

@@ -9,7 +9,9 @@ const axios = require("axios");
 const AvailableAppiontment = ({ footer, date, setDate }) => {
   const [treatment, setTreatment] = useState(null);
 
-  const formatedDate = format(date, "PP");
+  const formatedDate = format(date, "MMM d, yyyy"); // Format date manually
+
+  console.log(formatedDate)
   let selectedDate = "Please Select a Day";
   const {
 
@@ -17,7 +19,7 @@ const AvailableAppiontment = ({ footer, date, setDate }) => {
     isLoading,
     error,
     refetch,
-  } = useQuery(["availabe", formatedDate], () => fetch(`https://doctors-portal-server-one-psi.vercel.app/available?date=${formatedDate}`).then(res =>
+  } = useQuery(["availabe", formatedDate], () => fetch(`https://doctors-portal-server-chi-ten.vercel.app/available?date=${formatedDate}`).then(res =>
     res.json()
   )
   )

@@ -20,7 +20,7 @@ const Userinfo = () => {
     };
     console.log(darktheme);
   useEffect(()=>{
-    axios.get('https://doctors-portal-server-one-psi.vercel.app/userinfo').then((res)=>{
+    axios.get('https://doctors-portal-server-chi-ten.vercel.app/userinfo').then((res)=>{
         setUserInfo(res.data);
     })
   },[])
